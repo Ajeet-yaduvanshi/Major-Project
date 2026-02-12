@@ -89,6 +89,10 @@ startServer();
         res.locals.currentUser=req.user;
         next();
     });
+    app.get("/", (req, res) => {
+    res.redirect("/listings");
+    });
+
     
     app.use("/listings",listingsRoutes);
     
