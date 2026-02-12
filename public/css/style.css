@@ -1,0 +1,132 @@
+body{
+    
+    font-family:"Plus Jakarta Sans",sans-serif !important;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+.container{
+    flex:1;
+}
+.navbar{
+    height:5rem;
+    background-color: white;
+    z-index:1050 !important;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info-links{
+    text-decoration: none !important;
+    color:#222222 !important;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand{
+    width:100% !important;
+    display:flex !important;
+    align-items: center !important;
+    justify-content:center !important;
+}
+.f-info-socials i{
+    font-size:1.3rem !important;
+    margin-right: 1rem !important;
+}
+.f-info{
+    text-align: center !important;
+    height:8rem !important;
+    background-color:#ebebeb !important;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    align-items:space-evenly!important;
+}
+/*Cards*/
+.listing-card{
+    border:none !important;
+    margin-bottom:2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width:100% !important;
+    object-fit:cover !important;
+}
+.cord-body{
+    padding:0 !important;
+}
+.card-text {
+    font-weight:400 !important;
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity:0;
+}
+.card-img-overlay:hover{
+    opacity:0.2;
+    background-color: white;
+}
+.add-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+}
+.show-img{
+    height:30vh;
+}
+.btns{
+    display:flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+/*Map*/
+#map{
+    height: 400px;
+    width: 100%;
+    border-radius: 1rem;
+
+}
+.alert{
+    transition:all 0.5s ease;
+}
+/* Mobile search fix */
+@media(max-width:768px){
+
+  .navbar-collapse {
+    background:white;
+    padding:10px;
+  }
+
+  .navbar form{
+    margin-top:10px;
+    width:100%;
+  }
+
+  .search-input{
+    width:100%;
+  }
+
+  .btn-search{
+    width:100%;
+    margin-top:5px;
+  }
+}
+#countryDropdown{
+  max-height:200px;
+  overflow-y:auto;
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:2000;
+}
+
+.dropdown-item{
+  cursor:pointer;
+}
