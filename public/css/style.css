@@ -130,3 +130,18 @@ body{
 .dropdown-item{
   cursor:pointer;
 }
+.show-img {
+    height: 45vh;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .show-img {
+        height: 30vh;
+    }
+}
+
+.card {
+    word-wrap: break-word;
+}
+
